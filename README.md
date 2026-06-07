@@ -42,7 +42,7 @@ This project builds an end-to-end local AI chatbot with a browser-based UI, back
  
 | **Dark Mode** | **Light Mode** |
 |---|---|
-| ![Dark Mode](Figures/Local_LLM_Chatbot(1).png) | ![Light Mode](Figures/Local_LLM_Chatbot(2).png) |
+| ![Dark Mode](Figures/Local_LLM_Chatbot%20(1).png) | ![Light Mode](Figures/Local_LLM_Chatbot%20(2).png) |
  
 > Dark mode (default) and light mode — toggle available in the sidebar.
  
