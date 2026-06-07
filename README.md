@@ -38,6 +38,16 @@ This project builds an end-to-end local AI chatbot with a browser-based UI, back
 
 ---
 
+## 📸 Screenshots
+ 
+| **Dark Mode** | **Light Mode** |
+|---|---|
+| ![Dark Mode](Figures/Local_LLM_Chatbot(1).png) | ![Light Mode](Figures/Local_LLM_Chatbot(2).png) |
+ 
+> Dark mode (default) and light mode — toggle available in the sidebar.
+ 
+---
+
 ## 🛠️ Tech Stack
  
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
