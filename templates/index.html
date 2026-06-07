@@ -1,0 +1,94 @@
+<!--This is the chat window you'll see in your browser. This is what makes it feel like ChatGPT instead of a boring terminal.-->>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local LLM Chatbot</title>
+
+    <!-- This links your CSS file for styling -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <!-- ─── MAIN CONTAINER ─── -->
+    <div class="app-container">
+
+        <!-- ─── LEFT SIDEBAR ─── -->
+        <div class="sidebar">
+            <h2>🤖 Local LLM</h2>
+            <p class="subtitle">Running on your laptop</p>
+
+            <!-- Model selector dropdown -->
+            <!-- This lets you switch between AI models -->
+            <div class="model-section">
+                <label for="model-select">Choose Model:</label>
+                <select id="model-select">
+                    <option value="llama3.1">Llama 3.1</option>
+                </select>
+            </div>
+
+            <!-- New Chat button — clears conversation history -->
+            <button id="new-chat-btn" onclick="newChat()">
+                + New Chat
+            </button>
+
+            <!-- Status indicator — shows if AI is online -->
+            <div class="status">
+                <span class="status-dot"></span>
+                <span>Model Active</span>
+            </div>
+
+            <!-- Privacy reminder -->
+            <div class="privacy-note">
+                🔒 100% Private<br>
+                No data leaves your laptop
+            </div>
+        </div>
+
+        <!-- ─── MAIN CHAT AREA ─── -->
+        <div class="chat-container">
+
+            <!-- Chat header -->
+            <div class="chat-header">
+                <h1>Local LLM Chatbot</h1>
+                <p>Powered by Ollama — No internet required</p>
+            </div>
+
+            <!-- ─── MESSAGE WINDOW ─── -->
+            <!-- This is where chat bubbles appear -->
+            <div class="chat-window" id="chat-window">
+
+                <!-- Welcome message shown at start -->
+                <div class="message ai-message">
+                    <div class="message-bubble">
+                        👋 Hello! I'm running locally on your laptop using Llama 3.1.
+                        Your conversations are completely private — nothing leaves your device.
+                        How can I help you today?
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ─── INPUT AREA ─── -->
+            <!-- Where you type your message -->
+            <div class="input-area">
+                <textarea id="user-input" placeholder="Type your message here... (Press Enter to send)" rows="1"
+                    onkeydown="handleKeyPress(event)"></textarea>
+                <button id="send-btn" onclick="sendMessage()">
+                    Send ➤
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- This links your JavaScript file -->
+    <!-- Must be at the bottom so the page loads first -->
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
